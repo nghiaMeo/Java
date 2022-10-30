@@ -6,13 +6,16 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="button-box"/>
+		<item key="selection" value="button_1"/>
 		<list key="findhistory">
+			<item value="categories-search-wrapper"/>
+			<item value="button_1"/>
+			<item value="categories-wrapper"/>
+			<item value="logo-3"/>
+			<item value="style"/>
 			<item value="button-box"/>
 			<item value="content"/>
-			<item value="categories-search-wrapper"/>
 			<item value="category-heading"/>
-			<item value="categories-wrapper"/>
 			<item value=".bg-img"/>
 			<item value="back"/>
 			<item value=".categories-search-wrapper"/>
@@ -20,9 +23,6 @@
 			<item value="h4"/>
 			<item value="47B5FF"/>
 			<item value=".category-menu-list"/>
-			<item value="20px 0px"/>
-			<item value="pl-200 pr-200 overflow clearfix"/>
-			<item value="Product Categories"/>
 		</list>
 		<list key="replacehistory">
 			<item value=""/>
