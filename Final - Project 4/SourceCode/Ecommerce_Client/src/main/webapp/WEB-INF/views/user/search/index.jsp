@@ -6,6 +6,8 @@
 
 <%@ taglib prefix="mt" tagdir="/WEB-INF/tags"%>
 <mt:usertemplate title="${title }">
+
+
 	<jsp:attribute name="content">
 		<div class="shop-page-wrapper shop-page-padding ptb-100">
             <div class="container-fluid">

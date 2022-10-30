@@ -69,21 +69,22 @@
 				<div class="logo-3">
 					<a href="${pageContext.request.contextPath }/user/home/index"> <img
 						src="${pageContext.request.contextPath }/uploads/images/${store.logo }"
-						alt="Store's logo" height="70px" title="Store's logo">
+						alt="Store's logo" style="margin-top: -10%"    height="70px" title="Store's logo">
 					</a>
 				</div>
 				
-				<div class="categories-search-wrapper">
-					<div class="categories-wrapper">
-					<c:if test="${hideTopSearchBar == null}">
+				<div class="categories-search-wrapper" style="height:10px">
+					<div class="categories-wrapper" style="margin-top: -14px;">
+					
 						<form method="get" action="${pageContext.request.contextPath }/user/search/index" >
 							<input placeholder="Enter Your key word" type="text" name="keyword">
 							<button type="submit">Search</button>
 						</form>
 					</div>
-					</c:if>
+					
 					
 				</div>
+				
 				<div class="electronics-login-register">
 					<ul>
 						<c:if test="${username == null}" >
@@ -105,7 +106,7 @@
 						</c:if>
 					</ul>
 				</div>
-				<div class="trace-cart-wrapper">
+				<div class="trace-cart-wrapper" style="margin-top: -4px;">
 					<div class="categories-cart same-style">
 						<div class="same-style-icon">
 							<c:if test="${username != null}" >

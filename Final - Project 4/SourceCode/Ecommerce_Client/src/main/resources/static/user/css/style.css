@@ -126,6 +126,7 @@
   display: inline-block;
   font-size: 13px;
   border-radius: 30px
+  
 }
 
 /* 2. index page */
@@ -2227,6 +2228,7 @@ a.banner-book-style-btn:hover {
     border-radius: 40px;
     border: 1px solid;
     border-color: #47B5FF;
+    
 }
 .categories-search-wrapper.categories-search-wrapper2 {
     background-color: transparent;
@@ -2259,6 +2261,7 @@ a.banner-book-style-btn:hover {
 }
 
 .categories-wrapper form input {
+	pading: 10px;
     background: transparent none repeat scroll 0 0;
     border: medium none;
     box-shadow: none;
@@ -2266,7 +2269,7 @@ a.banner-book-style-btn:hover {
     font-size: 12px;
     height: 30px;
     letter-spacing: 1px;
-    padding-left: 40px;
+    padding-left: 50px;
     width: 530px;
     padding-right: 100px;
 }
