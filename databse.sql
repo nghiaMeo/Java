@@ -37,7 +37,7 @@ CREATE TABLE `banners` (
   KEY `updater_id` (`updater_id`),
   CONSTRAINT `banners_ibfk_1` FOREIGN KEY (`creater_id`) REFERENCES `users` (`id`),
   CONSTRAINT `banners_ibfk_2` FOREIGN KEY (`updater_id`) REFERENCES `users` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -46,7 +46,7 @@ CREATE TABLE `banners` (
 
 LOCK TABLES `banners` WRITE;
 /*!40000 ALTER TABLE `banners` DISABLE KEYS */;
-INSERT INTO `banners` VALUES (12,'There are many new laptop models','very cheap price','https://adminlte.io/docs/3.1//javascript/toasts.html','2021-12-01',1,'2021-12-08',1,0),(16,'So many laptop Gaming sales 20','20/10/2022 - 15/11/2022','tmp','2022-10-30',1,NULL,NULL,1);
+INSERT INTO `banners` VALUES (12,'There are many new laptop models','very cheap price','https://adminlte.io/docs/3.1//javascript/toasts.html','2021-12-01',1,'2022-10-31',1,1);
 /*!40000 ALTER TABLE `banners` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -92,7 +92,7 @@ CREATE TABLE `cart_product` (
   KEY `product_id` (`product_id`),
   CONSTRAINT `cart_product_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `products` (`id`),
   CONSTRAINT `cart_product_ibfk_2` FOREIGN KEY (`cart_id`) REFERENCES `carts` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=113 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=120 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -101,7 +101,7 @@ CREATE TABLE `cart_product` (
 
 LOCK TABLES `cart_product` WRITE;
 /*!40000 ALTER TABLE `cart_product` DISABLE KEYS */;
-INSERT INTO `cart_product` VALUES (83,25,5,1),(84,26,7,1),(85,27,3,1),(86,29,14,1),(87,31,12,1),(98,58,7,1),(100,60,7,6),(101,62,16,1),(102,72,5,1),(103,72,3,1),(104,72,7,1),(105,74,2,1),(106,74,3,1),(107,75,5,1),(108,75,7,1),(109,75,12,1),(110,79,15,1),(111,79,3,1);
+INSERT INTO `cart_product` VALUES (83,25,5,1),(84,26,7,1),(85,27,3,1),(86,29,14,1),(87,31,12,1),(98,58,7,1),(100,60,7,6),(101,62,16,1),(102,72,5,1),(103,72,3,1),(104,72,7,1),(105,74,2,1),(106,74,3,1),(107,75,5,1),(108,75,7,1),(109,75,12,1),(110,79,15,1),(111,79,3,1),(113,91,15,1),(114,91,19,1),(115,91,21,1),(117,93,18,4),(119,97,18,1);
 /*!40000 ALTER TABLE `cart_product` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -120,7 +120,7 @@ CREATE TABLE `carts` (
   PRIMARY KEY (`id`),
   KEY `user_id` (`user_id`),
   CONSTRAINT `carts_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=90 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=99 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -129,7 +129,7 @@ CREATE TABLE `carts` (
 
 LOCK TABLES `carts` WRITE;
 /*!40000 ALTER TABLE `carts` DISABLE KEYS */;
-INSERT INTO `carts` VALUES (25,10,'2021-12-06','done'),(26,10,'2021-12-06','done'),(27,10,'2021-12-06','done'),(29,10,'2021-12-06','done'),(31,10,'2021-12-06','done'),(57,10,'2021-12-07','pending'),(58,10,'2021-12-07','done'),(59,10,'2021-12-07','pending'),(60,10,'2021-12-08','done'),(61,10,'2021-12-08','pending'),(62,1,'2021-12-08','pending'),(63,12,'2021-12-08','pending'),(64,12,'2021-12-08','pending'),(65,12,'2021-12-08','pending'),(66,12,'2021-12-08','pending'),(67,1,'2021-12-08','pending'),(68,1,'2021-12-08','pending'),(69,1,'2021-12-08','pending'),(70,1,'2021-12-08','pending'),(71,1,'2021-12-08','pending'),(72,1,'2021-12-08','pending'),(73,1,'2021-12-08','pending'),(74,14,'2021-12-08','done'),(75,14,'2021-12-08','done'),(76,14,'2021-12-08','pending'),(78,16,'2022-10-29','pending'),(79,16,'2022-10-29','pending'),(80,1,'2022-10-29','pending'),(81,1,'2022-10-29','pending'),(82,1,'2022-10-29','pending'),(83,1,'2022-10-29','pending'),(84,16,'2022-10-29','pending'),(85,1,'2022-10-29','pending'),(86,1,'2022-10-30','pending'),(87,16,'2022-10-30','pending'),(88,1,'2022-10-30','pending'),(89,1,'2022-10-30','pending');
+INSERT INTO `carts` VALUES (25,10,'2021-12-06','done'),(26,10,'2021-12-06','done'),(27,10,'2021-12-06','done'),(29,10,'2021-12-06','done'),(31,10,'2021-12-06','done'),(57,10,'2021-12-07','pending'),(58,10,'2021-12-07','done'),(59,10,'2021-12-07','pending'),(60,10,'2021-12-08','done'),(61,10,'2021-12-08','pending'),(62,1,'2021-12-08','pending'),(63,12,'2021-12-08','pending'),(64,12,'2021-12-08','pending'),(65,12,'2021-12-08','pending'),(66,12,'2021-12-08','pending'),(67,1,'2021-12-08','pending'),(68,1,'2021-12-08','pending'),(69,1,'2021-12-08','pending'),(70,1,'2021-12-08','pending'),(71,1,'2021-12-08','pending'),(72,1,'2021-12-08','pending'),(73,1,'2021-12-08','pending'),(74,14,'2021-12-08','done'),(75,14,'2021-12-08','done'),(76,14,'2021-12-08','pending'),(78,16,'2022-10-29','pending'),(79,16,'2022-10-29','pending'),(80,1,'2022-10-29','pending'),(81,1,'2022-10-29','pending'),(82,1,'2022-10-29','pending'),(83,1,'2022-10-29','pending'),(84,16,'2022-10-29','pending'),(85,1,'2022-10-29','pending'),(86,1,'2022-10-30','pending'),(87,16,'2022-10-30','pending'),(88,1,'2022-10-30','pending'),(89,1,'2022-10-30','pending'),(90,1,'2022-10-31','pending'),(91,16,'2022-10-31','pending'),(92,1,'2022-10-31','pending'),(93,16,'2022-10-31','done'),(94,16,'2022-10-31','pending'),(95,16,'2022-10-31','pending'),(96,1,'2022-10-31','pending'),(97,16,'2022-10-31','done'),(98,16,'2022-10-31','pending');
 /*!40000 ALTER TABLE `carts` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -150,7 +150,7 @@ CREATE TABLE `categories` (
   PRIMARY KEY (`id`),
   KEY `parent_id` (`parent_id`),
   CONSTRAINT `categories_ibfk_1` FOREIGN KEY (`parent_id`) REFERENCES `categories` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=37 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -159,7 +159,7 @@ CREATE TABLE `categories` (
 
 LOCK TABLES `categories` WRITE;
 /*!40000 ALTER TABLE `categories` DISABLE KEYS */;
-INSERT INTO `categories` VALUES (1,'Laptop MSI',5,1,NULL,1),(2,'Laptop MSI i7 8800H',0,1,1,2),(3,'Laptop Lenovo',15,1,NULL,1),(4,'Laptop Lenovo Black I7',0,1,3,2),(5,'Laptop Acer',15,1,NULL,1),(6,'Laptop Acer I7',15,1,5,2),(12,'Laptop Asus',15,1,13,1),(13,'Laptop Asus I5',15,1,12,2),(14,'Laptop Asus Pink',15,1,13,3),(15,'Laptop MSI I5',15,1,1,2),(16,'Laptop Acer Yellow',15,1,6,3),(17,'Laptop MSI Pink',15,1,15,3),(18,'Laptop MSI Blue',15,1,2,3),(19,'Laptop MSI Black',15,1,15,3),(20,'Laptop Asus Black',15,1,13,3),(21,'Laptop Acer FT',15,1,6,3),(22,'Laptop Asus Black',15,1,13,3),(23,'Laptop Acer Pink',15,1,6,3),(24,'Laptop HP',15,1,NULL,2),(25,'Laptop DELL',15,1,NULL,1),(28,'Laptop Gigabyte',15,1,NULL,1),(29,'Laptop ASUS',15,1,NULL,1),(30,'Laptop DELL I5',0,1,25,2),(31,'Laptop DELL Black',0,1,25,2),(32,' Laptop ASUS I5',15,1,29,2),(33,'Laptop ASUS Gaming',15,1,32,3),(34,'Laptop HP I9',15,1,24,2),(35,'Laptop Gigabyte',15,1,28,2);
+INSERT INTO `categories` VALUES (1,'Laptop MSI',5,1,NULL,1),(2,'Laptop MSI i7 8800H',0,1,1,2),(3,'Laptop Lenovo',15,1,NULL,1),(4,'Laptop Lenovo Black I7',0,1,3,2),(5,'Laptop Acer',15,1,NULL,1),(6,'Laptop Acer I7',15,1,5,2),(12,'Laptop Asus',15,1,13,1),(13,'Laptop Asus I5',15,1,12,2),(14,'Laptop Asus Pink',15,1,13,3),(15,'Laptop MSI I5',15,1,1,2),(16,'Laptop Acer Yellow',15,1,6,3),(17,'Laptop MSI Pink',15,1,15,3),(18,'Laptop MSI Blue',15,1,2,3),(19,'Laptop MSI Black',15,1,15,3),(20,'Laptop Asus Black',15,1,13,3),(21,'Laptop Acer FT',15,1,6,3),(22,'Laptop Asus Black',15,1,13,3),(23,'Laptop Acer Pink',15,1,6,3),(24,'Laptop HP',15,1,NULL,2),(25,'Laptop DELL',15,1,NULL,1),(28,'Laptop Gigabyte',15,1,NULL,1),(29,'Laptop ASUS',15,1,NULL,1),(30,'Laptop DELL I5',0,1,25,2),(31,'Laptop DELL Black',0,1,25,2),(32,' Laptop ASUS I5',15,1,29,2),(33,'Laptop ASUS Gaming',15,1,32,3),(34,'Laptop HP I9',15,1,24,2),(35,'Laptop Gigabyte',15,1,28,2),(36,'Laptop Lenovo blue',0,1,4,3);
 /*!40000 ALTER TABLE `categories` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -327,7 +327,7 @@ CREATE TABLE `images` (
   KEY `banner_id` (`banner_id`),
   CONSTRAINT `images_ibfk_1` FOREIGN KEY (`banner_id`) REFERENCES `banners` (`id`),
   CONSTRAINT `images_ibfk_2` FOREIGN KEY (`product_id`) REFERENCES `products` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=34 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -336,7 +336,7 @@ CREATE TABLE `images` (
 
 LOCK TABLES `images` WRITE;
 /*!40000 ALTER TABLE `images` DISABLE KEYS */;
-INSERT INTO `images` VALUES (30,'banner2.jpg',NULL,12),(31,'banner1.png',NULL,12),(32,'cb7be3b5739942d7a2c84f5b21735f2a.jpg',NULL,16),(33,'a38f3ab34f494ff3ab18eb460c45848e.jpg',NULL,16);
+INSERT INTO `images` VALUES (30,'banner2.jpg',NULL,12),(31,'banner1.png',NULL,12);
 /*!40000 ALTER TABLE `images` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -414,7 +414,7 @@ CREATE TABLE `products` (
   CONSTRAINT `products_ibfk_1` FOREIGN KEY (`store_id`) REFERENCES `stores` (`id`),
   CONSTRAINT `products_ibfk_2` FOREIGN KEY (`branch_id`) REFERENCES `branchs` (`id`),
   CONSTRAINT `products_ibfk_3` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -423,7 +423,7 @@ CREATE TABLE `products` (
 
 LOCK TABLES `products` WRITE;
 /*!40000 ALTER TABLE `products` DISABLE KEYS */;
-INSERT INTO `products` VALUES (1,'Laptop Aspire Black','aspire1.jpg','Laptop 1 description','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.',100,0,100,12,12,2,18,'2021-11-18','2021-12-08',0,0,1,1,25,25,2,4,1,NULL,0),(2,'Laptop Aspire Red','aspire2.jpg','Product 2 description','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.\r\n',100,0,70,11,12,5,18,'2021-11-18','2021-11-19',0,1,1,1,25,25,1,5,1,'true',0),(3,'Laptop ASPIRE','aspire4.jpg','fffttttt','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.',100,0,55,10,12,1,18,'2021-11-18','2021-11-30',1,0,1,1,25,25,3,4,1,NULL,0),(4,'Product 4','hp.jpg','Product 4 description','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.',100,0,40,12,12,1,18,'2021-11-18','2021-11-27',0,0,1,1,25,25,3,3,1,'',0),(5,'Laptop Asprice','aspire2.jpg','Product 5 description','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.',100,0,80,10,12,1,18,'2021-11-01','2021-11-18',1,0,1,1,25,25,2,1,1,'',0),(7,'Laptop MSI','msige2.jpg','Product 6 description','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.',100,0,25,1,12,1,18,'2021-11-18','2021-12-08',1,0,1,1,25,25,1,5,1,NULL,0),(10,'Laptop MSI GE','msige3.jpg','Laptop 2 description','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.',100,0,60,12,12,2,18,'2021-11-18','2021-12-08',0,0,1,1,25,25,2,4,1,NULL,0),(11,'Laptop MSI','msige4.jpg','','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.',100,0,70,12,12,5,18,'2021-11-18','2021-11-19',0,1,1,1,25,25,1,5,1,'true',0),(12,'Laptop Yoga','yoga2.jpg','fffttttt','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.',100,0,55,10,12,1,18,'2021-11-18','2021-11-30',1,0,1,1,25,25,3,4,1,NULL,0),(13,'Laptop Lenovo','dell.jpg','Product 11 description','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.',100,0,40,12,12,1,18,'2021-11-18','2021-11-27',0,0,1,1,25,25,3,3,1,'',0),(14,'Laptop MSI ','msipule3.jpg','Product 9 description','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.',100,0,80,11,12,1,18,'2021-11-01','2021-11-18',1,0,1,1,25,25,2,1,1,'',0),(15,'Laptop MSI Pule','msipule4.jpg','Product 10 description','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.',100,0,25,12,12,1,18,'2021-11-18','2021-11-18',1,0,1,1,25,25,1,5,1,'',0),(16,'Laptop Nitro','nitro2.jpg','Laptop asus detail','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.',15,0,15,0,0,1,1,'2021-12-07','2021-12-07',0,0,1,1,0,0,0,0,1,NULL,NULL),(17,'Laptop Nitro','nitro1.jpg','asdfasdfasdfas','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.',50,0,50,0,0,1,1,'2021-12-08',NULL,0,0,1,1,0,0,0,0,1,NULL,NULL),(18,'Laptop Lenovo','8cd8619370094e4897d5a3437a3def00.jpg','Laptop Asus','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.',12.3,0,23.5,0,0,1,5,'2021-12-08',NULL,1,1,1,1,0,0,0,0,1,NULL,NULL),(19,'Laptop Acer','6df7f4d3fa3d45a1bedba68b1fd82e61.jpg','Acer Aspire 7 A715-42G-R4XX gaming laptop with powerful performance and stylish design, promises to give users a smooth working and gaming experience.','Graphics card type\r\n\r\nGeforce GTX 1650 4GB\r\nAmount of RAM 8GB\r\nType of RAM DDR4 3200MHz, 2 slots up to 32GB\r\nHard Drive 256GB SSD NVMe M.2 PCIe Gen 3 x 4\r\nScreen size 15.6 inches\r\nScreen resolution 1920 x 1080 pixels (FullHD)\r\nThe web of communication 2x USB 2.0; 1x USB 3.0; 1x USB 3.1 Type C; 1x HDMI\r\nOperating system Windows 11 Home SL\r\nPin 3 Cell , 48 Whr\r\nWeight 2.1 kg',900,0,700,200,0,1,5,'2022-10-29',NULL,1,1,1,1,0,0,0,0,1,NULL,NULL);
+INSERT INTO `products` VALUES (1,'Laptop Aspire Black','aspire1.jpg','Laptop 1 description','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.',100,0,100,12,12,2,18,'2021-11-18','2021-12-08',0,0,1,1,25,25,2,4,1,NULL,0),(2,'Laptop Aspire Red','aspire2.jpg','Product 2 description','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.\r\n',100,0,70,11,12,5,18,'2021-11-18','2021-11-19',0,1,1,1,25,25,1,5,1,'true',0),(3,'Laptop ASPIRE','aspire4.jpg','fffttttt','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.',100,0,55,10,12,1,18,'2021-11-18','2021-11-30',1,0,1,1,25,25,3,4,1,NULL,0),(4,'Product 4','hp.jpg','Product 4 description','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.',100,0,40,12,12,1,18,'2021-11-18','2021-11-27',0,0,1,1,25,25,3,3,1,'',0),(5,'Laptop Asprice','aspire2.jpg','Product 5 description','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.',100,0,80,10,12,1,18,'2021-11-01','2021-11-18',1,0,1,1,25,25,2,1,1,'',0),(7,'Laptop MSI','msige2.jpg','Product 6 description','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.',100,0,25,1,12,1,18,'2021-11-18','2021-12-08',1,0,1,1,25,25,1,5,1,NULL,0),(10,'Laptop MSI GE','msige3.jpg','Laptop 2 description','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.',100,0,60,12,12,2,18,'2021-11-18','2021-12-08',0,0,1,1,25,25,2,4,1,NULL,0),(11,'Laptop MSI','msige4.jpg','','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.',100,0,70,12,12,5,18,'2021-11-18','2021-11-19',0,1,1,1,25,25,1,5,1,'true',0),(12,'Laptop Yoga','yoga2.jpg','fffttttt','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.',100,0,55,10,12,1,18,'2021-11-18','2021-11-30',1,0,1,1,25,25,3,4,1,NULL,0),(13,'Laptop Lenovo','dell.jpg','Product 11 description','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.',100,0,40,12,12,1,18,'2021-11-18','2021-11-27',0,0,1,1,25,25,3,3,1,'',0),(14,'Laptop MSI ','msipule3.jpg','Product 9 description','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.',100,0,80,11,12,1,18,'2021-11-01','2021-11-18',1,0,1,1,25,25,2,1,1,'',0),(15,'Laptop MSI Pule','msipule4.jpg','Product 10 description','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.',100,0,25,12,12,1,18,'2021-11-18','2021-11-18',1,0,1,1,25,25,1,5,1,'',0),(16,'Laptop Nitro','nitro2.jpg','Laptop asus detail','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.',15,0,15,0,0,1,1,'2021-12-07','2021-12-07',0,0,1,1,0,0,0,0,1,NULL,NULL),(17,'Laptop Nitro','nitro1.jpg','asdfasdfasdfas','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.',50,0,50,0,0,1,1,'2021-12-08',NULL,0,0,1,1,0,0,0,0,1,NULL,NULL),(18,'Laptop Lenovo','8cd8619370094e4897d5a3437a3def00.jpg','Laptop Lenovo','Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.',12.3,0,23.5,1,0,1,36,'2021-12-08',NULL,1,1,1,1,0,0,0,0,1,NULL,NULL),(19,'Laptop Acer','6df7f4d3fa3d45a1bedba68b1fd82e61.jpg','Acer Aspire 7 A715-42G-R4XX gaming laptop with powerful performance and stylish design, promises to give users a smooth working and gaming experience.','Graphics card type\r\n\r\nGeforce GTX 1650 4GB\r\nAmount of RAM 8GB\r\nType of RAM DDR4 3200MHz, 2 slots up to 32GB\r\nHard Drive 256GB SSD NVMe M.2 PCIe Gen 3 x 4\r\nScreen size 15.6 inches\r\nScreen resolution 1920 x 1080 pixels (FullHD)\r\nThe web of communication 2x USB 2.0; 1x USB 3.0; 1x USB 3.1 Type C; 1x HDMI\r\nOperating system Windows 11 Home SL\r\nPin 3 Cell , 48 Whr\r\nWeight 2.1 kg',900,0,700,200,0,1,5,'2022-10-29',NULL,1,1,1,1,0,0,0,0,1,NULL,NULL),(21,'Laptop DELL INSP','935f40216efd44299a10d58b77d4bd75.jpg','i7 \r\nram 16GB\r\n','so many tabbar',300,0,200,50,0,1,25,'2022-10-31',NULL,0,1,1,1,0,0,0,0,1,NULL,NULL);
 /*!40000 ALTER TABLE `products` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -552,7 +552,7 @@ CREATE TABLE `stores` (
 
 LOCK TABLES `stores` WRITE;
 /*!40000 ALTER TABLE `stores` DISABLE KEYS */;
-INSERT INTO `stores` VALUES (1,'MAN Store','0347557353','nghia181032@gmail.com','4/1 street 10, Thu Duc City','9674acab45344ff08b7423b6dd584adb.jpg',5,'2021-11-18','2021-11-30','2022-10-29',1,NULL,'');
+INSERT INTO `stores` VALUES (1,'MAN Store','0347557353','nghia181032@gmail.com','4/1 street 10, Thu Duc City','9674acab45344ff08b7423b6dd584adb.jpg',5,'2021-11-18','2021-11-30','2022-10-31',1,NULL,'');
 /*!40000 ALTER TABLE `stores` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -662,7 +662,7 @@ CREATE TABLE `transaction_details` (
   PRIMARY KEY (`id`),
   KEY `user_id` (`user_id`),
   CONSTRAINT `transaction_details_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -671,7 +671,7 @@ CREATE TABLE `transaction_details` (
 
 LOCK TABLES `transaction_details` WRITE;
 /*!40000 ALTER TABLE `transaction_details` DISABLE KEYS */;
-INSERT INTO `transaction_details` VALUES (1,'transaction detail 1','paypal','address 1',2,0,0,'2021-11-01',3),(2,'Transaction details Mon Dec 06 18:30:39 ICT 2021',NULL,'tmp address',1,0,0,'2021-12-06',10),(3,'Transaction details Mon Dec 06 18:31:16 ICT 2021',NULL,'tmp address',1,0,0,'2021-12-06',10),(4,'Transaction details Mon Dec 06 18:33:27 ICT 2021',NULL,'tmp address',2,0,0,'2021-12-06',10),(5,'Transaction details Mon Dec 06 18:36:08 ICT 2021',NULL,'tmp address',1,0,0,'2021-12-06',10),(6,'Transaction details Mon Dec 06 18:40:56 ICT 2021',NULL,'tmp address',1,0,0,'2021-12-06',10),(7,'Transaction details Mon Dec 06 18:46:49 ICT 2021',NULL,'tmp address',1,0,0,'2021-12-06',10),(8,'Transaction details Mon Dec 06 18:50:06 ICT 2021',NULL,'tmp address',1,0,0,'2021-12-06',10),(9,'Transaction details Mon Dec 06 18:52:47 ICT 2021',NULL,'tmp address',1,0,0,'2021-12-06',10),(10,'Transaction details Mon Dec 06 18:59:26 ICT 2021',NULL,'tmp address',1,0,0,'2021-12-06',10),(11,'Transaction details Mon Dec 06 19:00:40 ICT 2021',NULL,'tmp address',1,0,0,'2021-12-06',10),(12,'Transaction details Mon Dec 06 19:02:34 ICT 2021',NULL,'tmp address',1,0,0,'2021-12-06',10),(13,'Transaction details Tue Dec 07 19:37:01 ICT 2021',NULL,'tmp address',1,0,0,'2021-12-07',10),(14,'Transaction details Wed Dec 08 09:45:01 ICT 2021',NULL,'tmp address',1,0,0,'2021-12-08',10),(15,'Transaction details Wed Dec 08 15:22:28 ICT 2021',NULL,'tmp address',2,0,0,'2021-12-08',14),(16,'Transaction details Wed Dec 08 15:32:56 ICT 2021',NULL,'tmp address',3,0,0,'2021-12-08',14);
+INSERT INTO `transaction_details` VALUES (1,'transaction detail 1','paypal','address 1',2,0,0,'2021-11-01',3),(2,'Transaction details Mon Dec 06 18:30:39 ICT 2021',NULL,'tmp address',1,0,0,'2021-12-06',10),(3,'Transaction details Mon Dec 06 18:31:16 ICT 2021',NULL,'tmp address',1,0,0,'2021-12-06',10),(4,'Transaction details Mon Dec 06 18:33:27 ICT 2021',NULL,'tmp address',2,0,0,'2021-12-06',10),(5,'Transaction details Mon Dec 06 18:36:08 ICT 2021',NULL,'tmp address',1,0,0,'2021-12-06',10),(6,'Transaction details Mon Dec 06 18:40:56 ICT 2021',NULL,'tmp address',1,0,0,'2021-12-06',10),(7,'Transaction details Mon Dec 06 18:46:49 ICT 2021',NULL,'tmp address',1,0,0,'2021-12-06',10),(8,'Transaction details Mon Dec 06 18:50:06 ICT 2021',NULL,'tmp address',1,0,0,'2021-12-06',10),(9,'Transaction details Mon Dec 06 18:52:47 ICT 2021',NULL,'tmp address',1,0,0,'2021-12-06',10),(10,'Transaction details Mon Dec 06 18:59:26 ICT 2021',NULL,'tmp address',1,0,0,'2021-12-06',10),(11,'Transaction details Mon Dec 06 19:00:40 ICT 2021',NULL,'tmp address',1,0,0,'2021-12-06',10),(12,'Transaction details Mon Dec 06 19:02:34 ICT 2021',NULL,'tmp address',1,0,0,'2021-12-06',10),(13,'Transaction details Tue Dec 07 19:37:01 ICT 2021',NULL,'tmp address',1,0,0,'2021-12-07',10),(14,'Transaction details Wed Dec 08 09:45:01 ICT 2021',NULL,'tmp address',1,0,0,'2021-12-08',10),(15,'Transaction details Wed Dec 08 15:22:28 ICT 2021',NULL,'tmp address',2,0,0,'2021-12-08',14),(16,'Transaction details Wed Dec 08 15:32:56 ICT 2021',NULL,'tmp address',3,0,0,'2021-12-08',14),(17,'Transaction details Mon Oct 31 16:15:20 GMT+07:00 2022',NULL,'tmp address',1,0,0,'2022-10-31',16),(18,'Transaction details Mon Oct 31 16:40:06 GMT+07:00 2022',NULL,'tmp address',1,0,0,'2022-10-31',16);
 /*!40000 ALTER TABLE `transaction_details` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -704,7 +704,7 @@ CREATE TABLE `transactions` (
   CONSTRAINT `transactions_ibfk_3` FOREIGN KEY (`store_id`) REFERENCES `stores` (`id`),
   CONSTRAINT `transactions_ibfk_4` FOREIGN KEY (`transaction_detail_id`) REFERENCES `transaction_details` (`id`),
   CONSTRAINT `transactions_ibfk_5` FOREIGN KEY (`product_id`) REFERENCES `products` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -713,7 +713,7 @@ CREATE TABLE `transactions` (
 
 LOCK TABLES `transactions` WRITE;
 /*!40000 ALTER TABLE `transactions` DISABLE KEYS */;
-INSERT INTO `transactions` VALUES (7,500,NULL,1,1,100,600,NULL,1,1,'cancel','Cancelled by store - I don\'t like this transaction'),(8,600,NULL,1,1,100,700,NULL,5,1,'done',''),(9,500,NULL,1,1,100,600,NULL,2,1,'cancel',NULL),(10,600,NULL,1,1,100,700,NULL,1,1,'done',NULL),(11,600,NULL,1,1,100,700,NULL,5,1,'done',NULL),(12,500,NULL,1,1,100,600,NULL,3,1,'done',NULL),(13,25,NULL,1,1,0,25,NULL,7,7,'pending',NULL),(14,80,NULL,1,1,0,80,NULL,5,8,'pending',NULL),(15,25,NULL,1,1,0,25,NULL,7,9,'pending',NULL),(16,55,NULL,1,1,0,55,NULL,3,10,'pending',NULL),(17,80,NULL,1,1,0,80,NULL,14,11,'pending',NULL),(18,55,NULL,1,1,0,55,NULL,12,12,'pending',NULL),(19,25,NULL,1,1,0,25,NULL,7,13,'pending',NULL),(20,25,NULL,1,6,0,150,NULL,7,14,'pending',NULL),(21,70,NULL,1,1,0,70,NULL,2,15,'pending',NULL),(22,55,NULL,1,1,0,55,NULL,3,15,'pending',NULL),(23,80,NULL,1,1,0,80,NULL,5,16,'pending',NULL),(24,25,NULL,1,1,0,25,NULL,7,16,'pending',NULL),(25,55,NULL,1,1,0,55,NULL,12,16,'pending',NULL);
+INSERT INTO `transactions` VALUES (7,500,NULL,1,1,100,600,NULL,1,1,'done',''),(8,600,NULL,1,1,100,700,NULL,5,1,'done',''),(9,500,NULL,1,1,100,600,NULL,2,1,'done',''),(10,600,NULL,1,1,100,700,NULL,1,1,'done',NULL),(11,600,NULL,1,1,100,700,NULL,5,1,'done',NULL),(12,500,NULL,1,1,100,600,NULL,3,1,'done',NULL),(13,25,NULL,1,1,0,25,NULL,7,7,'done',''),(16,55,NULL,1,1,0,55,NULL,3,10,'done',''),(17,80,NULL,1,1,0,80,NULL,14,11,'done',''),(18,55,NULL,1,1,0,55,NULL,12,12,'done',''),(19,25,NULL,1,1,0,25,NULL,7,13,'done',''),(20,25,NULL,1,6,0,150,NULL,7,14,'pending',NULL),(21,70,NULL,1,1,0,70,NULL,2,15,'pending',NULL),(22,55,NULL,1,1,0,55,NULL,3,15,'pending',NULL),(23,80,NULL,1,1,0,80,NULL,5,16,'pending',NULL),(24,25,NULL,1,1,0,25,NULL,7,16,'pending',NULL),(25,55,NULL,1,1,0,55,NULL,12,16,'pending',NULL),(26,23.5,NULL,1,1,0,23.5,NULL,18,18,'done','');
 /*!40000 ALTER TABLE `transactions` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -768,4 +768,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-10-30 21:06:29
+-- Dump completed on 2022-10-31 17:07:00
