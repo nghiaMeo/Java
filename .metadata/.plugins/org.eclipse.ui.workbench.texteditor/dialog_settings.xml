@@ -6,8 +6,13 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="button_1"/>
+		<item key="selection" value=""/>
 		<list key="findhistory">
+			<item value="transactions"/>
+			<item value="product-wrapper"/>
+			<item value="product-wrapper product-border mb-24"/>
+			<item value="hover"/>
+			<item value="TOP PRODUCTS"/>
 			<item value="categories-search-wrapper"/>
 			<item value="button_1"/>
 			<item value="categories-wrapper"/>
@@ -18,11 +23,6 @@
 			<item value="category-heading"/>
 			<item value=".bg-img"/>
 			<item value="back"/>
-			<item value=".categories-search-wrapper"/>
-			<item value="electronics-login-register"/>
-			<item value="h4"/>
-			<item value="47B5FF"/>
-			<item value=".category-menu-list"/>
 		</list>
 		<list key="replacehistory">
 			<item value=""/>

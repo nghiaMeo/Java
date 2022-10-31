@@ -11,19 +11,19 @@ import com.demo.models.TransactionInfo;
 
 public interface ITransactionRepository extends CrudRepository<Transactions, Integer> {
 
-	@Query("select new com.demo.models.TransactionInfo(id, products.id, services.id, stores.name, price, quantity, tax, status, cancelReason) from Transactions")
+	@Query("select new com.demo.models.TransactionInfo(id, products.id, services.id, stores.name, price, quantity, tax, status, cancelReason) from Transactions ")
 	public Iterable<TransactionInfo> findAllInfo();
 	
 	@Query("select new com.demo.models.TransactionInfo(id, services.id, services.name, stores.name, price, quantity, tax, status, cancelReason, transactionDetails.created) from Transactions")
 	public Iterable<TransactionInfo> findAllServiceInfo();
 	
-	@Query("select new com.demo.models.TransactionInfo(id, products.id, products.name, products.categories.name, products.branchs.name, transactionDetails.users.username, price, quantity, tax, note, status, cancelReason, transactionDetails.created) from Transactions where services.id is null and status <> 'done'")
+	@Query("select new com.demo.models.TransactionInfo(id, products.id, products.name, products.categories.name, products.branchs.name, transactionDetails.users.username, price, quantity, tax, note, status, cancelReason, transactionDetails.created) from Transactions where services.id is null and status <> 'done' ORDER BY transactionDetails.created DESC")
 	public Iterable<TransactionInfo> findAllProductInfo();
 	
-	@Query("select new com.demo.models.TransactionInfo(id, products.id, products.name, products.categories.name, products.branchs.name, transactionDetails.users.username, price, quantity, tax, note, status, cancelReason, transactionDetails.created) from Transactions where status = 'done'")
+	@Query("select new com.demo.models.TransactionInfo(id, products.id, products.name, products.categories.name, products.branchs.name, transactionDetails.users.username, price, quantity, tax, note, status, cancelReason, transactionDetails.created) from Transactions where status = 'done' ORDER BY transactionDetails.created DESC")
 	public Iterable<TransactionInfo> findAllSuccess();
 	
-	@Query("select new com.demo.models.TransactionInfo(id, products.id, products.name, products.categories.name, products.branchs.name, transactionDetails.users.username, price, quantity, tax, note, status, cancelReason, transactionDetails.created) from Transactions where id = :id")
+	@Query("select new com.demo.models.TransactionInfo(id, products.id, products.name, products.categories.name, products.branchs.name, transactionDetails.users.username, price, quantity, tax, note, status, cancelReason, transactionDetails.created) from Transactions where id = :id ORDER BY transactionDetails.created DESC")
 	public TransactionInfo findInfoById(@Param("id") int id);
 	
 	@Modifying

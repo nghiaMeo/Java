@@ -11,7 +11,7 @@ import com.demo.models.TransactionInfo;
 @Repository("userTransactionRepos")
 public interface ITransactionRepository extends CrudRepository<Transactions, Integer> {
 	
-	@Query("select new com.demo.models.TransactionInfo(id, products.id, products.name, products.categories.name, products.branchs.name, transactionDetails.users.username, price, quantity, tax, note, status, cancelReason, transactionDetails.created) from Transactions where transactionDetails.users.id = :userId")
+	@Query("select new com.demo.models.TransactionInfo(id, products.id, products.name, products.categories.name, products.branchs.name, transactionDetails.users.username, price, quantity, tax, note, status, cancelReason, transactionDetails.created) from Transactions where transactionDetails.users.id = :userId ORDER BY transactionDetails.created DESC ")
 	public Iterable<TransactionInfo> findAllInfoByUserId(@Param("userId") int userId);
 	
 }

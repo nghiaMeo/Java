@@ -59,7 +59,7 @@ public class AccountController {
 	public String login(@RequestParam(value = "error", required = false) String error, ModelMap modelMap,
 			HttpServletRequest request) {
 		if (error != null) {
-			modelMap.put("msg", "CC.");
+			modelMap.put("msg", "Invalid username or password.");
 			modelMap.put("msgType", "danger");
 		}
 
