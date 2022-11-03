@@ -6,23 +6,23 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value=""/>
+		<item key="selection" value="fa"/>
 		<list key="findhistory">
+			<item value="btn-primary"/>
+			<item value="btn btn-primary"/>
+			<item value="fa-edit"/>
+			<item value="fa"/>
+			<item value="pe-7s-cart"/>
+			<item value="same-style-icon"/>
+			<item value=".category-common4::before"/>
+			<item value="category-dropdown-style "/>
+			<item value="category-common4"/>
+			<item value="before"/>
 			<item value="transactions"/>
 			<item value="product-wrapper"/>
 			<item value="product-wrapper product-border mb-24"/>
 			<item value="hover"/>
 			<item value="TOP PRODUCTS"/>
-			<item value="categories-search-wrapper"/>
-			<item value="button_1"/>
-			<item value="categories-wrapper"/>
-			<item value="logo-3"/>
-			<item value="style"/>
-			<item value="button-box"/>
-			<item value="content"/>
-			<item value="category-heading"/>
-			<item value=".bg-img"/>
-			<item value="back"/>
 		</list>
 		<list key="replacehistory">
 			<item value=""/>
