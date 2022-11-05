@@ -125,7 +125,7 @@
 			<!-- /.content -->
 		<div class="modal fade" id="modal-danger">
 		<div class="modal-dialog">
-			<div class="modal-content bg-danger">
+			<div class="modal-content bg-info">
 				<div class="modal-header">
 					<h4 class="modal-title">Confirm delete</h4>
 					<button type="button" class="close" data-dismiss="modal"
@@ -135,6 +135,7 @@
 				</div>
 				<div class="modal-body">
 					<p>Are you sure?</p>
+					<input class="form-control" placeholder="Enter reason delete" type="text" value="">
 				</div>
 				<div class="modal-footer justify-content-between">
 					<button type="button" class="btn btn-outline-light"
