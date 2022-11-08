@@ -80,7 +80,7 @@
 					
 						<form method="get" action="${pageContext.request.contextPath }/user/search/index" >
 							<input placeholder="Enter Your key word" type="text" name="keyword">
-							<button type="submit">Search</button>
+							<button type="submit">Search  </button>
 						</form>
 					</div>
 					
