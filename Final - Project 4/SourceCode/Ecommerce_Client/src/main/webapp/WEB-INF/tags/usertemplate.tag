@@ -65,7 +65,22 @@
 
 <body>
 	<header>	
-				
+		<div class="header-top-wrapper-2 border-bottom-2">
+			<div class="header-info-wrapper pl-200 pr-200">
+				<div class="header-contact-info">
+					<ul>
+						<li><a>Hotline:</a> (024) 3628.8790 - (086) 830.2123 </li>
+						<li>Email: <a>cskh@manstore.vn</a></li>
+					</ul>
+				</div>
+				<div>
+					<a  href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square"  style="font-size:30px;margin-right: 20px;color: blue;"></i></a>
+					<a  href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube-play"  style="font-size:30px;margin-right: 20px;color: red;"></i></a>
+					<a href="https://www.instagram.com/" target="_blank"><img alt="" src="${pageContext.request.contextPath }/uploads/images/instagram.svg"    style="margin: 0px 0px 10px 0px;"></a>
+					
+				</div>
+			</div>
+		</div>
 		<div class="header-bottom pt-40 pb-30 clearfix">
 			<div class="header-bottom-wrapper pr-200 pl-200">
 				<div class="logo-3">
@@ -138,7 +153,7 @@
 	<!--  invoke here #######################  -->
 
 	<footer class="footer-area">
-		<div class="footer-top-3 black-bg pt-75 pb-25">
+		<div class="footer-top-2 black-bg pt-15 pb-0">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-4 col-md-6 col-xl-4">
@@ -183,6 +198,7 @@
 
 						</div>
 					</div>
+					<!--  -->
 					<div class="col-lg-4 col-md-6 col-xl-4">
 						<div class="footer-widget mb-40">
 						<h3 class="footer-widget-title-3">General Policy</h3>	
@@ -222,7 +238,16 @@
 									</div>
 								</div>
 							</div>
-							
+							<div class="footer-info-wrapper-2">
+								<div class="footer-address-electro">
+									<div class="footer-info-content2">
+										<p>
+											
+											<a href="${pageContext.request.contextPath }/user/inforPoli/index"  style="color:white">Warranty Policy</a>
+										</p>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 					
@@ -232,20 +257,46 @@
 							<h3 class="footer-widget-title-3">Follow us</h3>
 							<div class="footer-info-wrapper-2">
 								<div class="footer-address-electro">
-									<i class="fa fa-facebook-square"  style="font-size:30px;margin-right: 5px;"><a  href="facebook.com" ></a></i>
+									<i class="fa fa-facebook-square"  style="font-size:30px;margin-right: 30px;color: white;"><a  href="facebook.com" ></a></i>
 										
 									<div class="footer-info-content2">
-										<i class="fa fa-youtube-play" style="font-size:30px;margin-right: 5px;"><a  href="facebook.com" ></a></i>
+										<i class="fa fa-youtube-play" style="font-size:30px;margin-right: 30px;color: white;"><a  href="facebook.com" ></a></i>
 										
 									</div>
 									<div class="footer-info-content2">
-										<i class="fa fa-instagram"  style="font-size:30px"><a  href="facebook.com" ></a></i>
+										<i class="fa fa-instagram"  style="font-size:30px; color: white;"><a  href="facebook.com" ></a></i>
 										
 									</div>
+									
 								</div>
 							</div>
+							<h5 class="footer-widget-title-5" style="color: white;">Payment method</h5>
+							<div class="footer-info-content2">
+								<i class="fa fa-cc-visa"  style="font-size:30px;margin-right: 10px; color: white;"><a  href="facebook.com" ></a></i>	
+								<i class="fa fa-cc-paypal"  style="font-size:30px;margin-right: 10px; color: white;"><a  href="facebook.com" ></a></i>	
+								<i class="fa fa-cc-mastercard"  style="font-size:30px; color: white;"><a  href="facebook.com" ></a></i>	
+								
+							</div>
+							
 						</div>
 					</div>
+					
+					<!--  -->
+				</div>
+			</div>
+		</div>
+		<div class="footer-info-content2">
+					
+		</div>
+		<div class="header-top-wrapper-2 border-bottom-2">
+			<div class="header-info-wrapper pl-200 pr-200">
+				<div class="header-contact-info">
+					<p style="color:black"> 2022 - Copyright by GiGaChad Trading & Informatics Co., Ltd</p>
+				</div>
+				<div>
+					
+					<img alt="" src="${pageContext.request.contextPath }/uploads/images/bo-cong-thuong.png" >
+				
 				</div>
 			</div>
 		</div>

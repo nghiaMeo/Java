@@ -135,7 +135,7 @@
 				</div>
 				<div class="modal-body">
 					<p>Are you sure?</p>
-					<input class="form-control" placeholder="Enter reason delete" type="text" value="">
+					<input class="form-control" placeholder="Enter reason cancel" type="text" value="">
 				</div>
 				<div class="modal-footer justify-content-between">
 					<button type="button" class="btn btn-outline-light"

@@ -6,8 +6,11 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="fa"/>
+		<item key="selection" value="footer-info-content2"/>
 		<list key="findhistory">
+			<item value="footer-info-content2"/>
+			<item value="product-quantity-input"/>
+			<item value="H5"/>
 			<item value="btn-primary"/>
 			<item value="btn btn-primary"/>
 			<item value="fa-edit"/>
@@ -20,9 +23,6 @@
 			<item value="before"/>
 			<item value="transactions"/>
 			<item value="product-wrapper"/>
-			<item value="product-wrapper product-border mb-24"/>
-			<item value="hover"/>
-			<item value="TOP PRODUCTS"/>
 		</list>
 		<list key="replacehistory">
 			<item value=""/>

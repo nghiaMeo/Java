@@ -3384,7 +3384,7 @@ a.banner-book-style-btn:hover {
     width: 68px;
 }
 .footer-info-icon2 span {
-    color: #aaaaaa;
+    color: white;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -3392,7 +3392,7 @@ a.banner-book-style-btn:hover {
     margin-left: 5px;
 }
 .footer-info-content2 > p {
-    color: #aaaaaa;
+    color: white;
     line-height: 25px;
     margin: 0;
 }
