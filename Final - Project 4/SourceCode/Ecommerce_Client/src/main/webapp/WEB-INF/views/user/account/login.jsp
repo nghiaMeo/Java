@@ -28,6 +28,9 @@
                                         <input type="password"
 												name="password" placeholder="Password">
 										</div>
+										<div class="button-box">
+                                            <p><a href="">Forgotten account?</a></p>
+                                        </div>
                                         <div class="button-box">
                                             <button type="submit"
 												class="default-btn floatright">Login</button>

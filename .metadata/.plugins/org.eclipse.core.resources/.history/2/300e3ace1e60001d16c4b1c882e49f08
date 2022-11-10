@@ -1,0 +1,70 @@
+ <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1" isELIgnored="false"%>
+
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+
+<%@ taglib prefix="mt" tagdir="/WEB-INF/tags"%>
+<mt:usertemplate title="${title }">
+	<jsp:attribute name="content">
+	
+
+  
+      <div class="pl-200 pr-200 overflow clearfix">
+        <h3> <b>Warranty policy and regulations at MAN Store</b> </h3>
+        <h5> <b>I. Warranty Policy (Applicable to end-users):</b></h5>
+        <p> 1. For laptops, screens and components:</p>  
+        <p>- During the purchase process, TNC Store supports customers to immediately exchange for 100% new products within 7 days from the time of 
+        purchase if you have problems with manufacturer defects. (the product is required to have a complete box, accessories and no scratches and is not a consumable product*).</p>
+
+		<p>- TNC Store is committed to fixing problems and returning goods with warranty within 7-14 days (excluding Saturdays, Sundays, holidays, Tet and other pre-agreed cases).</p>
+        <p>2. Warranty cases later than specified:</p>
+        <p>
+        - For the case of warranty return later than the specified time, we will add the warranty period of your product corresponding to the time of delayed payment according to the regulations.</p>
+
+		<p>- For products that are warranted according to the company's standards, the supplier's warranty period arises. TNC Store is responsible for accelerating the progress to be able to return the warranty product as soon as possible to you.
+		 You may be able to borrow an equivalent device during the warranty period (if a loaner is available).</P>
+
+		<p>- In case the warranty is not available or the warranty period is too long, you can choose one of the following options: <br>
+				 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	+ Change to another device with equivalent or higher configuration at an agreed cost.<br>
+				 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	+ Re-enter the product at the agreed price.
+        </p>
+        <p><b>Note:</b></p>
+        <p>
+        - The above policy only applies to defective products due to the manufacturer and eligible for warranty.</p>
+
+		<p>- GiGaChad Trading and Informatics Co., Ltd does not warrant and is not responsible for the data and legality of the software and data available in the customer's product. Please save your data before submitting for warranty.</p>
+
+		<p>- Time to receive warranty: From 10am to 6pm daily
+        </p>
+        <h5> <b>II. Warranty conditions:</b></h5>
+        <p> 1. The following cases will not be covered by the warranty:</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ The device does not have a warranty card, the warranty card has been modified, patched, torn.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ The equipment does not have warranty stamps and barcodes of manufacturers, distributors and Tu Nguyet Trading and Informatics Co., Ltd.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ Using the wrong voltage, exceeding the device's capacity or having a fire or explosion, falling, dented, cracked, punctured, scratched...</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ Damage caused by natural disasters, animals, insects and humans.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; + Consumable accessories.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ All software errors.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ Expiry of warranty period stated on the slip.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ Customers arbitrarily interfere in BIOS.</p>
+        <p> 2. Other cases will be warranted according to the manufacturer's standards.</p>	
+        <h5> <b>III. Incentives:</b></h5>
+        <p>- You are supported to exchange or upgrade to a higher product within 48 hours from the time of invoice and only support to upgrade and change once from the first invoice.
+        </p>
+        <p>- For components that are out of warranty or are not eligible for warranty, we will facilitate support to the maximum extent. (In a supportable condition)
+        </p>
+        <p>- Retail customers when coming to send warranty goods at the service center can choose 1 of 2 delivery methods:
+        </p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ At the place of use or at the place of shipment: The warranty center will be responsible for returning the warranty goods (after processing is completed) at the place of use or the place of customer registration (within a radius of 10km). from the service center). Applies to each product.
+        </p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ At the Company's Warranty Center: The process of receiving and returning goods is still according to current regulations.
+        </p>
+        <h5> <b>IV. Warranty Location:</b></h5>
+        <p>MAN STORE Service Center. No. 172 Le Thanh Nghi, Dist. Hai Ba Trung, Hanoi
+        </p>
+        <p>Phone to look up warranty information: 0243.5120778
+        </p>
+        <p>Email: baohanh.tnc@gmail.com.</p>
+    </div>    
+	</jsp:attribute>
+</mt:usertemplate>

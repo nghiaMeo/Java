@@ -212,7 +212,7 @@
 
                                                                     </div>
                                                                 </div>
-                                                                <%-- top of best selling --%>
+                                                                top of best selling
                                                                     <div class="product-content-4 text-center">
                                                                         <h4>
                                                                             <a
@@ -282,7 +282,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-    
+                                </div> 
 	</jsp:attribute>
-</mt:usertemplate>
+</mt:usertemplate> 
+    
